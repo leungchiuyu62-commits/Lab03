@@ -2,11 +2,22 @@
 
 long calculate_factorial(int number )
 {
-    // TODO: write your code here
+    if (number < 1 || number > 20)
+    {
+        return -1;
+    }
+
+    long factorial = 1;
+    for (int i = 1; i <= number; i++)
+    {
+        factorial *= i;
+    }
+    
+    return factorial;
 }
 
 // DO NOT change the code below
-#ifndef ___TEST___
+#ifndef __TEST__
 int main() {
     int number =- 1;
     long result = -1;
